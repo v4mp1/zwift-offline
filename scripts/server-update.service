@@ -1,0 +1,11 @@
+[Unit]
+Description=zoffline server update
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/zwift-offline-master/scripts/update-server.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target

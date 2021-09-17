@@ -1,0 +1,12 @@
+[Unit]
+Description=zoffline
+After=server-update.service
+
+[Service]
+Type=idle
+ExecStart=sudo python3 /home/pi/zwift-offline-master/standalone.py
+WorkingDirectory=/home/pi/zwift-offline-master
+User=pi
+
+[Install]
+WantedBy=multi-user.target
