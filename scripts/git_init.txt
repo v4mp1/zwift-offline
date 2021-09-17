@@ -1,6 +1,6 @@
 git init
-git pull https://github.com/v4mp1/zwift-offline-pi server-update
-git remote add server-update https://github.com/v4mp1/zwift-offline-pi.git
+git pull https://github.com/v4mp1/zwift-offline server-update
+git remote add server-update https://github.com/v4mp1/zwift-offline.git
 git fetch server-update
 git checkout server-update
 git pull
