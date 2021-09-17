@@ -17,13 +17,14 @@ This is a fork of https://github.com/zoffline/zwift-offline
 <details><summary>Instructions</summary>
 
 * Download the zoffline server IMG file:<br> 
-  https://drive.google.com/u/0/uc?id=10GFwvN3P0NJrt_yGdxc0yw1wl7IIQ-_T&export=download
+  https://drive.google.com/u/0/uc?id=1rWhLeqmK3d181aCNy3BczpCLh-Y2O0Rr&export=download<p>
 * Extract the ZIP file to a known location.
 * Write the IMG file with a program to a SD-Card which is at least 4GB in size. 
 * Windows users can use Win32 Disk Imager:<br>
   https://sourceforge.net/projects/win32diskimager/<p>
-* The OS will auto resize at boot and use all remaining space of the SD-Card.
-
+* The OS will auto resize at boot and use all remaining space of the SD-Card.<p>
+* First boot can take up to 5 Minutes till the Zwift server is booted.
+	
 </details>
 
 ## Client install
