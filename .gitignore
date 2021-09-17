@@ -2,3 +2,4 @@
 __pycache__
 storage/*
 logs
+cdn/gameassets/MapSchedule_v2.xml
