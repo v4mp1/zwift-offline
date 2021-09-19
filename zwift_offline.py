@@ -485,7 +485,7 @@ def strava():
         return redirect('/user/%s/' % current_user.username)
     client = Client()
     url = client.authorization_url(client_id=client_id,
-                                   redirect_uri='redirect_uri='https://launcher.zwift.com/authorization',
+                                   redirect_uri='https://launcher.zwift.com/authorization',
                                    scope='activity:write')
     return redirect(url)
 
