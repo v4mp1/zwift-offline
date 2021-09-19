@@ -1,5 +1,5 @@
 .git
 __pycache__
-#storage/*
+storage/*
 logs
 cdn/gameassets/MapSchedule_v2.xml
