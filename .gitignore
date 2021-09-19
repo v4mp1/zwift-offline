@@ -1,7 +1,5 @@
-*.pyc
+.git
+__pycache__
 storage/*
-!storage/force_dir_in_git.txt
-__pycache__/
-build/
-dist/
-logs/
+logs
+cdn/gameassets/MapSchedule_v2.xml

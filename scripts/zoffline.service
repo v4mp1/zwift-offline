@@ -1,0 +1,11 @@
+[Unit]
+Description=zoffline
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/zwift-offline-master/scripts/start-server.sh
+User=pi
+
+[Install]
+WantedBy=multi-user.target
