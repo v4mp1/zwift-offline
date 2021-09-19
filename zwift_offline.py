@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# testing git pull
+
 import calendar
 import datetime
 import logging
