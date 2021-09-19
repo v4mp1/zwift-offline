@@ -101,28 +101,17 @@ This is a fork of https://github.com/zoffline/zwift-offline
 
 </details>
 
-### [OPTIONAL]: Upload activities, activate Multiplayer profiles, etc.
+### [OPTIONAL]: Upload activities to Garmin/Strava
 
 <details><summary>Expand</summary>
 
-* Connect with a SSH program like Putty or WinSCP to the Pi.<br> 
-``(User: pi Password: raspberry)``.
-  * Uploading activities:
-    * The Pi needs to be connected to a ethernet cable with internet access.
-    * Modify the necessary files (garmin, strava).
-  * Enable Multiplayer profiles:
-    * Create or upload a empty file called ``multiplayer.txt`` in the storage folder.
-  * Obtain the official map schedule:
-    * The Pi needs to be connected to a ethernet cable with internet access.
-	  * Map schedule file is getting pulled once per hour of the offical server.<br>
+* While connectet to the zoffline AP browse to ``https://192.168.50.10/login``
+  * Login with the user you wan't to upload activities (for instance rider1@zoffline.com)
+    * Garmin: Click on Garmin, enter your garmin connect username and password.
+    * Strava: Click on Strava, enter your strava username/password and click on authorize.
+      * If you do not see a "Strava authorized" message after this procedure, do it again.<p> 
 	
-* Which files you need to modify you can look here (step 3-6):<br>
-  https://github.com/zoffline/zwift-offline/blob/master/README.md	
-
-* If you modify the ``zwift-offline.db`` in the storage folder on the Pi then it is
-  possible that you encounter<br> a login problem on your second login on iOS devices.
-  To solve this problem you have to delete all folders<br> and files on your iOS device on the following path with the Filza file browser:<br>
-``/var/mobile/Containers/Data/Application/Zwift/Documents/Zwift/cp/*``
+* You are done with the Garmin/Strava auth process, you can close the tabs or logout. 
 	
 </details>
 
@@ -133,7 +122,7 @@ This is a fork of https://github.com/zoffline/zwift-offline
 * TBA
 
 </details>
-
+	
 ## Disclaimer
 
 Zwift is a trademark of Zwift, Inc., which is not affiliated with the maker of
