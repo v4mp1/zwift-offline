@@ -87,7 +87,9 @@ This is a fork of https://github.com/zoffline/zwift-offline
 * If you wan't to deactivate the jailbreak, reboot your device.<p>
 * You are done, have fun.
 
-### [OPTIONAL]: Enable Garmin/Strava upload activity feature on the server 
+</details>
+	
+### [OPTIONAL]: Enable Garmin/Strava upload activity feature
 
 <details><summary>Expand</summary>
 
