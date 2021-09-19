@@ -485,7 +485,7 @@ def strava():
         return redirect('/user/%s/' % current_user.username)
     client = Client()
     url = client.authorization_url(client_id=client_id,
-                                   redirect_uri='https://launcher.zwift.com/authorization',
+                                   redirect_uri='redirect_uri='https://launcher.zwift.com/authorization',
                                    scope='activity:write')
     return redirect(url)
 
@@ -555,6 +555,37 @@ def profile(username):
         except:
             flash("Invalid username or password.")
     return render_template("profile.html", username=current_user.username)
+
+
+@app.route("/garmin/<username>/", methods=["GET", "POST"])
+@login_required
+def garmin(username):
+    if request.method == "POST":
+        if request.form['username'] == "" or request.form['password'] == "":
+            flash("Garmin credentials can't be empty.")
+            return render_template("garmin.html", username=current_user.username)
+
+        username = request.form['username']
+        password = request.form['password']
+        player_id = current_user.player_id
+        profile_dir = '%s/%s' % (STORAGE_DIR, str(player_id))
+
+        try:
+            file_path = os.path.join(profile_dir, 'garmin_credentials.txt')
+            with open(file_path, 'w') as f:
+                f.write(username + '\n');
+                f.write(password + '\n');
+            if credentials_key is not None:
+                with open(file_path, 'rb') as fr:
+                    zwift_credentials = fr.read()
+                    cipher_suite = Fernet(credentials_key)
+                    ciphered_text = cipher_suite.encrypt(zwift_credentials)
+                    with open(file_path, 'wb') as fw:
+                        fw.write(ciphered_text)
+            flash("Garmin credentials saved.")
+        except:
+            flash("Error saving 'garmin_credentials.txt' file.")
+    return render_template("garmin.html", username=current_user.username)
 
 
 @app.route("/user/<username>/")
