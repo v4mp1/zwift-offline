@@ -87,40 +87,18 @@ This is a fork of https://github.com/zoffline/zwift-offline
 * If you wan't to deactivate the jailbreak, reboot your device.<p>
 * You are done, have fun.
 
-</details>
-
-<details><summary>macOS instructions</summary>
-
-* TBA
-
-</details>
-
-<details><summary>Android instructions</summary>
-
-* TBA
-
-</details>
-
-### [OPTIONAL]: Upload activities to Garmin/Strava
+### [OPTIONAL]: Enable Garmin/Strava upload activity feature on the server 
 
 <details><summary>Expand</summary>
 
-* While connectet to the zoffline AP browse to ``https://192.168.50.10/login``
-  * Login with the user you wan't to upload activities (for instance rider1@zoffline.com)
-    * Garmin: Click on Garmin, enter your garmin connect username and password.
-    * Strava: Click on Strava, enter your strava username/password and click on authorize.
-      * If you do not see a "Strava authorized" message after this procedure, do it again.<p> 
-	
+* In order to be able to upload activities at the end of a ride to Garmin/Strava you have to do:
+  * Connect to the zoffline AP and browse to https://192.168.50.10/login
+    * Login with the user you wan't to be able to upload activities (for instance rider1@zoffline.com)
+      * Garmin: Click on Garmin, enter your garmin connect username and password.
+      * Strava: Click on Strava, enter your strava username/password and click on authorize.<p>
+        
 * You are done with the Garmin/Strava auth process, you can close the tabs or logout. 
 	
-</details>
-
-### [OPTIONAL]: Documentation of how to create iOS >13 compatible certificate.
-
-<details><summary>Expand</summary>
-
-* TBA
-
 </details>
 	
 ## Disclaimer
