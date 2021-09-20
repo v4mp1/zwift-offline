@@ -78,8 +78,7 @@ This is a fork of https://github.com/zoffline/zwift-offline
     * If you did it right you will be asked if you want to replace the file ``cacert.pem`` press ``replace``.<p>
 * Check if you you are still connected to the zoffline AP, if not connect to it.<p>
 * Launch the Zwift App.
-  * Press on add existing user and not on create new user.
-  * Login with one of the following zoffline user/password combination:<br> 
+  * Log in with one of the following zoffline user/password combination:<br> 
     ``rider1@zoffline.com/rider1, rider2@zoffline.com/rider2, rider3@zoffline.com/rider3.`` 
     * Official online use: Connect to your usual internet AP and open Zwift (close Zwift if it is open in background).
     * Zoffline use:        Connect to the zoffline AP and open Zwift (close Zwift if it is open in background).
