@@ -1,6 +1,6 @@
 #!/bin/sh
 cd /home/pi/zwift-offline-master
-git reset --hard
+sudo git stash
 git pull
 sudo chmod +x *.py
 sudo chmod +x scripts/*.py
