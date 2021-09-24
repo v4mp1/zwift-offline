@@ -1,6 +1,7 @@
 *.pyc
 storage/*
 !storage/*
+!storage/cdn-proxy.txt
 __pycache__/
 build/
 dist/
