@@ -1,7 +1,13 @@
-.git
-__pycache__
+*.pyc
 storage/*
-logs
+!storage/*
+__pycache__/
+build/
+dist/
+logs/
 cdn/gameassets/MapSchedule_v2.xml
 cdn/gameassets/ZwiftAndroid_ver_cur.xml
 cdn/gameassets/ZwiftiOS_ver_cur.xml
+!cdn/gameassets/MapSchedule_v2.xml
+!cdn/gameassets/ZwiftAndroid_ver_cur.xml
+!cdn/gameassets/ZwiftiOS_ver_cur.xml
