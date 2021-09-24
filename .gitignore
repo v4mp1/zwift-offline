@@ -1,8 +1,5 @@
 *.pyc
 storage/*
-storage/cdn-proxy.txt
-!storage/*
-!storage/cdn-proxy.txt
 __pycache__/
 build/
 dist/
@@ -10,6 +7,3 @@ logs/
 cdn/gameassets/MapSchedule_v2.xml
 cdn/gameassets/ZwiftAndroid_ver_cur.xml
 cdn/gameassets/ZwiftiOS_ver_cur.xml
-!cdn/gameassets/MapSchedule_v2.xml
-!cdn/gameassets/ZwiftAndroid_ver_cur.xml
-!cdn/gameassets/ZwiftiOS_ver_cur.xml

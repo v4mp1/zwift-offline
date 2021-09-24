@@ -3,4 +3,6 @@ git pull https://github.com/v4mp1/zwift-offline server-update
 git remote add server-update https://github.com/v4mp1/zwift-offline.git
 git fetch server-update
 git checkout server-update
+git config user.name "zoffline"
+git config user.email "rider1@zoffline.com"
 git pull
