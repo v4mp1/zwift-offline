@@ -505,7 +505,7 @@ def authorization():
         client = Client()
         code = request.args.get('code')
         token_response = client.exchange_code_for_token(client_id=client_id, client_secret=client_secret, code=code)
-        with open('%s/strava_token.txt' % os.path.join(STORAGE_DIR, str(current_user.player_id)), 'w') as f:
+        with open(os.path.join(STORAGE_DIR, str(current_user.player_id), 'strava_token.txt'), 'w') as f:
             f.write(client_id + '\n');
             f.write(client_secret + '\n');
             f.write(token_response['access_token'] + '\n');
@@ -528,8 +528,7 @@ def profile(username):
 
         username = request.form['username']
         password = request.form['password']
-        player_id = current_user.player_id
-        profile_dir = '%s/%s' % (STORAGE_DIR, str(player_id))
+        profile_dir = os.path.join(STORAGE_DIR, str(current_user.player_id))
         session = requests.session()
 
         try:
@@ -574,19 +573,17 @@ def garmin(username):
 
         username = request.form['username']
         password = request.form['password']
-        player_id = current_user.player_id
-        profile_dir = '%s/%s' % (STORAGE_DIR, str(player_id))
 
         try:
-            file_path = os.path.join(profile_dir, 'garmin_credentials.txt')
+            file_path = os.path.join(STORAGE_DIR, str(current_user.player_id), 'garmin_credentials.txt')
             with open(file_path, 'w') as f:
                 f.write(username + '\n');
                 f.write(password + '\n');
             if credentials_key is not None:
                 with open(file_path, 'rb') as fr:
-                    zwift_credentials = fr.read()
+                    garmin_credentials = fr.read()
                     cipher_suite = Fernet(credentials_key)
-                    ciphered_text = cipher_suite.encrypt(zwift_credentials)
+                    ciphered_text = cipher_suite.encrypt(garmin_credentials)
                     with open(file_path, 'wb') as fw:
                         fw.write(ciphered_text)
             flash("Garmin credentials saved.")
@@ -2036,7 +2033,7 @@ def experimentation_v1_variant():
                     ('game_1_16_2_ble_alternate_unpair_all_paired_devices', 1),
                     ('game_1_17_game_client_activity_event', None),
                     ('game_1_17_tdf_femmes_yellow_jersey', None),
-                    ('game_1_17_ble_disable_component_sport_filter', None),
+                    ('game_1_17_ble_disable_component_sport_filter', 1),
                     ('game_1_15_assert_disable_abort', 1),
                     ('game_1_14_settings_refactor', None)]
 
