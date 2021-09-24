@@ -5,5 +5,5 @@ git pull
 sudo chmod +x *.py
 sudo chmod +x scripts/*.py
 sudo chmod +x scripts/*.sh
-sudo chown -R pi:pi *
+sudo chown -R pi:pi ./* ./.[!.]*
 sudo python3 standalone.py
