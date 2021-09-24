@@ -1,7 +1,9 @@
 #!/bin/sh
 cd /home/pi/zwift-offline-master
-sudo git stash
-git pull
+git stash
+git reset --hard HEAD
+git pull --force
+git checkout stash -- .
 sudo chmod +x *.py
 sudo chmod +x scripts/*.py
 sudo chmod +x scripts/*.sh
