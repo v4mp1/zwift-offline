@@ -1,5 +1,6 @@
 *.pyc
 storage/*
+storage/cdn-proxy.txt
 !storage/*
 !storage/cdn-proxy.txt
 __pycache__/
