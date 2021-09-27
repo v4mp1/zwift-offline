@@ -3,7 +3,7 @@
 This is a ready to play auto start zoffline server IMG for the Raspberry Pi.<br>
 The server will auto update the Zwift server on every boot if there are changes on github.<p>
 
-Following Raspberry Pi should be comaptible: 2b v1.2, 3a+, 3b, 3b+(tested) and 4b.<p>
+Following Raspberry Pi are tested and compatible: 3b+ and 4b.<p>
 
 You can play on any Zwift client (Windows, iOS, Android, macOS) over the zoffline wifi hotspot from the Pi.<br> 
 ``The iOS Zwift client needs a temporary jailbroken device.``
@@ -17,7 +17,7 @@ This is a fork of https://github.com/zoffline/zwift-offline
 <details><summary>Instructions</summary>
 
 * Download the zoffline server IMG file:<br> 
-  https://drive.google.com/u/0/uc?id=1ak9YeLm4hxcGc4EoISah2CHMMXtNwd6M&export=download<p>
+  https://drive.google.com/u/0/uc?id=1RwVOGN_Vbv_0MFQSLMsR4El0fEpKThV7&export=download<p>
 * Extract the ZIP file to a known location.
 * Write the IMG file with a program to a SD-Card which is at least 4GB in size. 
 * Windows users can use Win32 Disk Imager:<br>
