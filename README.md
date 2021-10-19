@@ -1,15 +1,17 @@
 # zoffline server for Raspberry Pi
 
-This is a ready to play auto start zoffline server IMG for the Raspberry Pi.<br>
-The server will auto update the Zwift server on every boot if there are changes on github.<p>
+This is a ready to play auto start Zwift zoffline server IMG for the Raspberry Pi.<br>
+The server auto update the Zwift server files once per hour if there is a new Zwift version.<br>
+On major Zwift changes updates will be pulled over github every Raspberry Pi reboot.<p>
 
 Following Raspberry Pi are tested and compatible: 3b+ and 4b.<p>
 
-You can play on any Zwift client (Windows, iOS, Android, macOS) over the zoffline wifi hotspot from the Pi.<br> 
-``The iOS Zwift client needs a temporary jailbroken device.``
+You can play on any Zwift client (Windows, Android, iOS, macOS and tvOS) over the zoffline wifi hotspot from the Pi.<br> 
+``A iOS or tvOS Zwift client device needs to be temporary jailbroken.``
 
-Passthrough internet on the Pi hotspot is enabled if you connect the Pi over a ethernet cable.<p>
-
+Passthrough internet on the Pi hotspot is enabled if you connect the Pi over a ethernet cable.<br>
+For Zwift server auto updates you also need to connect the Pi to a ethernet cable.<p>
+	
 This is a fork of https://github.com/zoffline/zwift-offline
 
 ## Server install
